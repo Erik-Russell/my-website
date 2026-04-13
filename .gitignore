@@ -1,2 +1,5 @@
 #web certs
 *.pem
+
+#IDE specific
+.vscode/
