@@ -2,10 +2,6 @@ html {
     background-color: lightsteelblue;
 }
 
-.container {
-    display: flex;
-}
-
 .item {
     padding: 10px;
 }
