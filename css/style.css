@@ -1,13 +1,23 @@
+:root {
+    /*colors*/
+    --neutral-color: wheat;
+    --light-red: #F2542D;
+    --dark-red: #562C2C;
+    --light-green: #0E9594;
+    --dark-green: #19323C;
+}
 html {
-    background-color: wheat;
+    background-color: var(--neutral-color);
 }
 
 header {
-    background-color: rgb(86, 44, 44);
-    color: rgb(14, 149, 148);
+    background-color: var(--light-red);
 }
 
-body {
-    background-color: rgb(18, 116, 117);
-    color: rgb(242, 84, 45);
+main {
+    background-color: var(--light-green);
+}
+
+footer {
+    background-color: var(--light-red);
 }
