@@ -1,3 +1,13 @@
 html {
-    background-color: lightsteelblue;
+    background-color: wheat;
+}
+
+header {
+    background-color: rgb(86, 44, 44);
+    color: rgb(14, 149, 148);
+}
+
+body {
+    background-color: rgb(18, 116, 117);
+    color: rgb(242, 84, 45);
 }
