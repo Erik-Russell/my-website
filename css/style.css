@@ -17,7 +17,7 @@ header {
     border-radius: 5px 5px 0 0;
     background-color: var(--light-red);
     color: var(--dark-green);
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 0.5em;
 }
 
@@ -40,7 +40,9 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:focus { /* a:focus to support accessibility */
+a:hover,
+a:focus {
+    /* a:focus to support accessibility */
     font-size: 110%;
 }
 
@@ -62,7 +64,6 @@ sub {
 }
 
 .inline-image {
-    
     margin: 0 1em;
     height: 2em;
     border-radius: 5px;
