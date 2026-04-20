@@ -7,11 +7,20 @@
     --dark-green: #19323C;
 }
 
-html {
+body {
+    margin: 0;
+
+    /* light green on dark red */
     background-color: var(--dark-red);
     color: var(--light-green);
 }
 
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 
+}
 
 header {
     border-radius: 5px 5px 0 0;
