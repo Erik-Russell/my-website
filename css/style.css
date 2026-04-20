@@ -19,7 +19,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 
+    padding: 1em;
 }
 
 header {
