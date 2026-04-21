@@ -3,6 +3,7 @@
     --dark-red: #562c2cff;
     --med-red: #a4402dff;
     --light-red: #f2542dff;
+    --dark-neutral: #F49A74;
     --neutral-color: #f5dfbbff;
     --light-green: #0e9594ff;
     --med-green: #108585ff;
@@ -11,6 +12,8 @@
 
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--dark-neutral);
 }
 
 /* Nav Bar */
@@ -28,6 +31,7 @@ nav a {
     text-decoration: none;
 }
 
+/* Header */
 .heading {
     text-align: center;
     padding: 3em;
@@ -46,6 +50,7 @@ nav a {
 .card {
     padding: 2em;
     background: var(--neutral-color);
+    border-radius: 2em 1em;
     transition: margin 0.3s ease, transform 0.3s ease;
 }
 
