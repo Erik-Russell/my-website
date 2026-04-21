@@ -35,7 +35,10 @@ nav a {
 .heading {
     text-align: center;
     padding: 3em;
-    background-color: var(--dark-green);
+    background: linear-gradient(
+        to right, var(--dark-green) 0%,
+        var(--med-green) 50%,
+        var(--dark-green) 100%);
     color: var(--light-red);
 }
 
@@ -43,15 +46,20 @@ nav a {
 .cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1em;
     padding: 2em
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2em;
     background: var(--neutral-color);
     border-radius: 2em 1em;
     transition: all 200ms;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card p {
@@ -60,7 +68,7 @@ nav a {
 }
 
 .card img {
-    width: 100%;
+    max-width: 8em;
     height: auto;
     border-radius: 1em;
 }
