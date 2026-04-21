@@ -51,10 +51,38 @@ nav a {
     padding: 2em;
     background: var(--neutral-color);
     border-radius: 2em 1em;
-    transition: margin 0.3s ease, transform 0.3s ease;
+    transition: all 200ms;
+}
+
+.card p {
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
 }
 
 .card:hover {
     background: var(--light-green);
     transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#credits {
+    font-size: 0.8em;
+    gap: 1em;
+    padding: 1em;
+}
+
+#credits a {
+    color: black;
+    text-decoration: none;
 }
