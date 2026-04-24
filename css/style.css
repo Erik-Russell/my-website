@@ -120,3 +120,8 @@ footer a {
 footer a:hover {
     background-color: var(--dark-neutral);
 }
+
+#credits {
+    display: flex;
+    flex-direction: column;
+}
