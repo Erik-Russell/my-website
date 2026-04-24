@@ -88,6 +88,11 @@ nav a{
 }
 
 .card {
+    display: grid;
+    grid-template-rows: 2rem 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
     border: solid;
     border-radius: 6px;
     text-align: center;
@@ -103,7 +108,19 @@ nav a{
     max-width: 100px;
 }
 
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 16px;
+    background-color: var(--dark-neutral);
+}
+
 /* footer */
+
 footer {
     display: grid;
     grid-template-columns: 2fr 3fr;
