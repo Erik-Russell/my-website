@@ -16,6 +16,10 @@
 </head>
 
 <body>
+  <!-- 
+  header + site navigation
+  ** about and contact should be moved to footer **
+  -->
   <nav>
     <h1>Russell's Webpage</h1>
     <div>
@@ -24,35 +28,65 @@
       <a href="[placeholder]">Contact</a>
     </div>
   </nav>
-  <header class="heading">
-    <h2>Welcome</h2>
-    <p>enjoy an exposition of my personal interests</p>
-  </header>
-  <section class="cards">
-    <div class="card">
-      <p>Cryptography</p>
-      <img src="images/cryptography.png" alt="Cryptography icon">
+
+  <div class="container">
+    <!-- links for different pages of interest-->
+    <div class="nav-side">
+      <p>Links</p>
+      <a href="placeholder">Overview</a>
+      <a href="placeholder">Cryptography</a>
+      <a href="placeholder">Machining</a>
+      <a href="placeholder">Steam</a>
     </div>
-    <div class="card">
-      <p>Machining</p>
-      <img src="images/milling-machine.png" alt="milling-machine icon">
-    </div>
-    <div class="card">
-      <p>Steam</p>
-      <img src="images/steam.png" alt="steam cooling tower icon">
-    </div>
-  </section>
-  <footer>
-    <div>
-      &copy; Erik Russell
-    </div>
-    <div id="credits">credits:<br>
-      <a href="https://www.flaticon.com/free-icons/cryptography" title="cryptography icons">Cryptography
-        icons created by Iconjam - Flaticon</a><br>
-      <a href="https://www.flaticon.com/free-icons/cnc-machine" title="cnc-machine icons">Cnc-machine icons created by Smashicons - Flaticon</a><br>
-      <a href="https://www.flaticon.com/free-icons/steam" title="steam icons">Steam icons created by Eucalyp - Flaticon</a><br>
-    </div>
-  </footer>
+
+    <main class="cards">
+      <div class="card">
+        <p>Cryptography</p>
+        <img src="images/cryptography.png" alt="Cryptography icon">
+        <ul>
+          <li>Encryption Algorithms</li>
+          <li>Hashing Algorithms</li>
+          <li>Cyrptographic Keys</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p>Machining</p>
+        <img src="images/milling-machine.png" alt="milling-machine icon">
+        <ul>
+          <li>3-Axis / 5-Axis</li>
+          <li>CNC</li>
+          <li>Monolithic Machines</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p>Steam</p>
+        <img src="images/steam.png" alt="steam cooling tower icon">
+        <ul>
+          <li>Nuclear</li>
+          <li>Natural Gas</li>
+          <li>Fuel Oil</li>
+        </ul>
+      </div>
+    </main>
+    
+    <footer>
+      <div>
+        <p>&copy; Erik Russell<br> All Rights Reserved</p>
+      </div>
+      <div id="credits">
+        <p>credits:</p>
+        <!--
+        Flaticon License allows for use on personal projects
+        -->
+        <a href="https://www.flaticon.com/free-icons/cryptography" title="cryptography icons">Cryptography
+          icons created by Iconjam - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/cnc-machine" title="cnc-machine icons">Cnc-machine icons created by
+          Smashicons - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/steam" title="steam icons">Steam icons created by Eucalyp -
+          Flaticon</a>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
