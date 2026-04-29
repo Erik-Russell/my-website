@@ -142,3 +142,16 @@ footer a:hover {
     display: flex;
     flex-direction: column;
 }
+
+/*
+large paragraph
+*/
+
+.text-container {
+    padding: 3rem;
+    column-count: 2;
+}
+
+.text-container h1 {
+    column-span: all;
+}
