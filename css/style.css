@@ -155,3 +155,11 @@ large paragraph
 .text-container h1 {
     column-span: all;
 }
+
+/*
+Business Logos
+*/
+
+img.logo {
+    width: auto;
+}
