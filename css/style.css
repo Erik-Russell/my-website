@@ -160,6 +160,14 @@ large paragraph
 Business Logos
 */
 
+.logo-card {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr 1fr;
+    border: solid;
+    border-radius: 1rem;
+}
+
 img.logo {
-    width: auto;
+    width: 10rem;
 }
