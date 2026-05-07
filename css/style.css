@@ -4,7 +4,7 @@
     --med-red: #a4402dff;
     --light-red: #f2542dff;
     --dark-neutral: #F49A74;
-    --neutral-color: #f5dfbbff;
+    --neutral-color: #f5dfbb;
     --light-green: #0e9594ff;
     --med-green: #108585ff;
     --dark-green: #127475ff;
@@ -143,6 +143,15 @@ footer a:hover {
     flex-direction: column;
 }
 
+/* About Me Page */
+
+/* Background */
+
+#about-page {
+    background: url(../images/combined-background.png);
+    background-size: 101vw;
+}
+
 /*
 large paragraph
 */
@@ -150,11 +159,14 @@ large paragraph
 .text-container {
     padding: 3rem;
     column-count: 2;
+    background-color: rgba(245, 223, 187, 0.6);
 }
 
 .text-container h1 {
     column-span: all;
 }
+
+/* Contact Page */
 
 /*
 Business Logos
