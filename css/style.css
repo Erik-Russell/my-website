@@ -159,7 +159,7 @@ large paragraph
 .text-container {
     padding: 3rem;
     column-count: 2;
-    background-color: rgba(245, 223, 187, 0.6);
+    background-color: rgba(245, 223, 187, 0.8);
 }
 
 .text-container h1 {
