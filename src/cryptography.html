@@ -21,46 +21,123 @@
   header + site navigation
   ** about and contact should be moved to footer **
   -->
-    <nav>
-        <h1>Russell's Webpage</h1>
-        <div>
-            <a href="../index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
-        </div>
-    </nav>
+    <div class="header">
+        <h1>Cryptography</h1>
+    </div>
 
     <div class="container">
         <!-- links for different pages of interest-->
         <div class="nav-side">
-            <p>Links</p>
-            <a href="../index.html">Overview</a>
+            <p>Navigation</p>
+            <a href="../index.html">Home</a>
             <a href="./cryptography.html">Cryptography</a>
             <a href="./machining.html">Machining</a>
             <a href="./steam.html">Steam</a>
+            <br>
+            <a href="../src/about.html">About</a>
+            <a href="../src/contact.html">Contact</a>
         </div>
 
         <main>
-            <h2>Cryptography</h2>
+            <h2 class="construction"><i>Under Construction</i></h2>
+            <div class="center">
+                <p>#1 Cybersecurity New Source:<br></p>
+                <a href="https://thehackernews.com/">The Hacker News</a>
+            </div>
+            <div class="center">
+                <div class="content-links">
+                    <p class="center">Jump to Section:</p>
 
+                    <a href="#what-is-cryptography">What is Cryptography</a>
+                    <a href="#history-of-cryptography">History of Cryptography</a>
+                    <a href="#symmetric-vs-asymmetric-encryption">Symmetric vs Asymetric Encryption</a>
+                    <a href="#cryptographic-hash-functions">Cryptographic Hash Functions</a>
+                    <a href="#post-quantum-cryptography">Post Quantum Cryptography</a>
+                </div>
+            </div>
+            <div class="article-wrapper">
+                <section id="what-is-cryptography">
+                    <h2>What Is Cryptography?</h2>
+                    <p>Cryptography is the science of securing communication and information through the use of codes,
+                        ciphers, and mathematical transformations. Its core goal is to ensure that only intended
+                        recipients
+                        can read a message, even if it is intercepted by a third party. The word itself comes from the
+                        Greek
+                        <em>kryptos</em> (hidden) and <em>graphia</em> (writing). Modern cryptography extends far beyond
+                        secret messages — it underpins online banking, private communications, digital identity, and the
+                        integrity of data at rest and in transit.
+                    </p>
+                </section>
+
+                <section id="history-of-cryptography">
+                    <h2>A Brief History</h2>
+                    <p>Cryptography is ancient. The Caesar cipher, used by Julius Caesar around 58 BCE, shifted each
+                        letter
+                        of the alphabet by a fixed number of positions. Medieval Arab scholar Al-Kindi wrote the first
+                        known
+                        treatise on breaking ciphers in the 9th century, introducing frequency analysis. The 20th
+                        century
+                        brought machines like the German Enigma, whose cracking by Alan Turing and the team at Bletchley
+                        Park is credited with shortening World War II by years. The invention of public-key cryptography
+                        in
+                        the 1970s by Diffie, Hellman, and independently by Rivest, Shamir, and Adleman (RSA) marked a
+                        revolution that shaped the modern internet.</p>
+                </section>
+
+                <section id="symmetric-vs-asymmetric-encryption">
+                    <h2>Symmetric vs. Asymmetric Encryption</h2>
+                    <p>Cryptographic systems generally fall into two broad families. Symmetric encryption uses a single
+                        shared key for both encryption and decryption — fast and efficient, but the challenge lies in
+                        securely exchanging that key. AES (Advanced Encryption Standard) is the dominant symmetric
+                        algorithm
+                        today. Asymmetric encryption uses a mathematically linked key pair: a public key shared openly
+                        and a
+                        private key kept secret. Anyone can encrypt a message with your public key, but only you can
+                        decrypt
+                        it with your private key. In practice, most secure systems use both: asymmetric encryption to
+                        exchange a session key, then symmetric encryption for the bulk of the data.</p>
+                </section>
+
+                <section id="cryptographic-hash-functions">
+                    <h2>Cryptographic Hash Functions</h2>
+                    <p>A hash function takes an input of arbitrary length and produces a fixed-size output called a
+                        digest,
+                        in a way that is deterministic, fast to compute, and practically impossible to reverse. Even a
+                        tiny
+                        change to the input produces a completely different digest — the avalanche effect. SHA-256 and
+                        SHA-3
+                        are the current standards. Hash functions are foundational to digital signatures, password
+                        storage,
+                        and blockchain technology, where each block contains the hash of the previous one, making the
+                        chain
+                        tamper-evident. A good hash function must be collision-resistant: it should be computationally
+                        infeasible to find two different inputs that produce the same digest.</p>
+                </section>
+
+                <section id="post-quantum-cryptography">
+                    <h2>The Quantum Threat and Post-Quantum Cryptography</h2>
+                    <p>Quantum computers, once sufficiently powerful, will be able to break many of today's most widely
+                        used
+                        cryptographic algorithms. Shor's algorithm can factor large integers exponentially faster than
+                        any
+                        classical algorithm, which would render RSA and ECC effectively obsolete. Grover's algorithm
+                        similarly weakens symmetric encryption, though doubling key lengths largely mitigates this
+                        threat.
+                        In response, NIST finalized its first set of post-quantum cryptographic standards in 2024,
+                        including
+                        CRYSTALS-Kyber for key encapsulation and CRYSTALS-Dilithium for digital signatures, both based
+                        on
+                        the hardness of lattice problems believed to resist quantum attacks. The transition to
+                        post-quantum
+                        cryptography is already underway across governments, cloud providers, and standards bodies
+                        worldwide.</p>
+                </section>
+            </div>
         </main>
 
         <footer>
             <div>
                 <p>&copy; Erik Russell<br> All Rights Reserved</p>
-            </div>
-            <div id="credits">
-                <p>credits:</p>
-                <!--
-                Flaticon License allows for use on personal projects
-                -->
-                <a href="https://www.flaticon.com/free-icons/cryptography" title="cryptography icons">Cryptography
-                    icons created by Iconjam - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/cnc-machine" title="cnc-machine icons">Cnc-machine icons
-                    created by
-                    Smashicons - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/steam" title="steam icons">Steam icons created by Eucalyp -
-                    Flaticon</a>
             </div>
         </footer>
     </div>

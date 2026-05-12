@@ -1,4 +1,16 @@
-main {
-    color: black;
-    border: solid;
+.construction {
+    font-family: monospace;
+    text-align: center;
+}
+
+.content-links {
+    padding: 1em 25%;
+}
+
+.article-wrapper {
+    padding: 4em;
+}
+
+.article-wrapper > section {
+    padding: 1em;
 }

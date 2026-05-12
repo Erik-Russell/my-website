@@ -17,6 +17,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
 /* Page Background */
 
 body {
@@ -26,7 +33,7 @@ body {
 
 /* header */
 
-nav {
+.header {
     display: flex;
     justify-content: space-between;
     background-color: var(--dark-red);
@@ -34,20 +41,14 @@ nav {
     padding: 1rem 2rem;
 }
 
-nav div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.header div {
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
 }
 
-nav h1 {
+.header>h1 {
     font-size: 2rem;
     line-height: 1.6;
-}
-
-nav a{
-    text-decoration: none;
-    color: var(--light-green);
-    padding: 1rem;
 }
 
 /* nav-bar and main */
@@ -80,7 +81,8 @@ nav a{
 }
 
 /* main dashboard */
-.card, .cards {
+.card,
+.cards {
     display: grid;
     gap: 1rem;
     padding: 1rem;
@@ -113,10 +115,42 @@ nav a{
 }
 
 .card li {
-    padding: 1rem; /* 1rem change from 0.5 rem for aesthetics */
+    padding: 1rem;
+    /* 1rem change from 0.5 rem for aesthetics */
     margin: 1rem;
     border-radius: 1rem;
     background-color: var(--dark-neutral);
+}
+
+@media screen and (max-width:1024px) {
+    .card li {
+        height: 4em;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .cards {
+        grid-template: 
+        "card" auto
+        "card" auto
+        "card" auto;
+    }
+    
+    .card > p {grid-area: title;}
+    .card > img {grid-area: image;}
+    .card > ul {grid-area: list;}
+
+    .card {
+        display: grid;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+            'title list'
+            'image list';
+    }
+
+    .card > * {
+        overflow: hidden;
+    }
 }
 
 /* footer */
@@ -143,6 +177,13 @@ footer a:hover {
     flex-direction: column;
 }
 
+/* footer with no credits */
+
+footer:not(:has(#credits)) {
+    display: flex;
+    justify-content: center;
+}
+
 /* About Me Page */
 
 /* Background */
@@ -150,6 +191,12 @@ footer a:hover {
 #about-page {
     background: url(../images/combined-background.png);
     background-size: 101vw;
+    /* 101 due to image overlap issue */
+}
+
+/* to see the background image */
+.transparent-color {
+    background-color: rgba(245, 223, 187, 0.8);
 }
 
 /*
@@ -159,7 +206,7 @@ large paragraph
 .text-container {
     padding: 3rem;
     column-count: 2;
-    background-color: rgba(245, 223, 187, 0.8);
+    min-height: 100vh;
 }
 
 .text-container h1 {
