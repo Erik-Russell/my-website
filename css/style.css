@@ -153,6 +153,28 @@ body {
     }
 }
 
+/* phone screen size */
+@media screen and (max-width:450px){
+    .card {
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            'title'
+            'list';
+    }
+
+    .card  {
+        justify-content: center;
+    }
+
+    .card > ul {
+        width: 100%;
+    }
+
+    .card > img {
+        display: none;
+    }
+}
+
 /* footer */
 
 footer {
