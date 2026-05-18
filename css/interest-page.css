@@ -3,14 +3,35 @@
     text-align: center;
 }
 
+.external-links {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
 .content-links {
     padding: 1em 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.content-links>a,
+.external-links>a {
+    text-decoration: none;
 }
 
 .article-wrapper {
     padding: 4em;
 }
 
-.article-wrapper > section {
+@media screen and (max-width: 600px) {
+    .article-wrapper {
+        padding: 0.5em;
+    }
+}
+
+.article-wrapper>section {
     padding: 1em;
 }
