@@ -1,7 +1,7 @@
 fetch("components/nav.html")
 .then(response => response.text())
 .then(data => {
-    document.getElementById("home-nav-component").innerHTML = data;
+    document.getElementById("nav-component").innerHTML = data;
 
     //creating variables to hold the element reference
     // make a reference for the element
