@@ -13,3 +13,7 @@ fetch("components/nav.html")
     });
 })
 .catch(error => console.error("Nav didn't load", error));
+
+function blackBG() {
+    document.getElementsByClassName("header")[0].style.backgroundColor = "black";
+}
