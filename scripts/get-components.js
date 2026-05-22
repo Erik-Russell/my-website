@@ -1,3 +1,4 @@
+// set the nav bar
 fetch("components/nav.html")
 .then(response => response.text())
 .then(data => {
@@ -7,13 +8,23 @@ fetch("components/nav.html")
     // make a reference for the element
     const hamburger = document.getElementById("hamburger");
     const navList = document.getElementById("nav-list");
+    const navBrand = document.getElementById("navbar");
 
     hamburger.addEventListener("click", () => {
         navList.classList.toggle("active");
+        navBrand.classList.toggle("active");
     });
 })
 .catch(error => console.error("Nav didn't load", error));
 
-function blackBG() {
-    document.getElementsByClassName("header")[0].style.backgroundColor = "black";
+// dark mode
+function hideNavBar() {
+
 }
+
+// dynamic define local page hrefs
+document.querySelectorAll('a[href^="#"]').forEach(
+    anchor => {
+        anchor.href = window.location.pathname + anchor.getAttribute('href');
+    }
+);
