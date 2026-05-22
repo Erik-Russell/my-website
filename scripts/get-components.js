@@ -17,11 +17,6 @@ fetch("components/nav.html")
 })
 .catch(error => console.error("Nav didn't load", error));
 
-// dark mode
-function hideNavBar() {
-
-}
-
 // dynamic define local page hrefs
 document.querySelectorAll('a[href^="#"]').forEach(
     anchor => {
