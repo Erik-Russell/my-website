@@ -20,6 +20,13 @@
 .content-links>a,
 .external-links>a {
     text-decoration: none;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+.content-links>a:hover,
+.external-links>a:hover {
+    color: var(--light-green);
 }
 
 .article-wrapper {
