@@ -83,6 +83,11 @@ body {
     gap: 1rem;
 }
 
+.nav-list>li {
+    padding: 8px;
+    border-radius: 16px;
+}
+
 .nav-list a {
     color: var(--neutral-color);
     text-decoration: none;
