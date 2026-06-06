@@ -14,8 +14,34 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /* changed default font to Google Font */
+    font-family: "Space Mono", Arial, Helvetica, sans-serif;
     overflow: auto;
+}
+
+/* google font classes */
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .center {
@@ -112,17 +138,22 @@ body {
         grid-template-columns: 1fr 10fr;
     } */
     .nav-brand.active,
-    #nav-list.active {display: flex;}
+    #nav-list.active {
+        display: flex;
+    }
 }
 
 /* nav bar narrow screen expanded */
 @media screen and (max-width:600px) {
+
     .nav-brand,
-    #nav-list {display: none;}
+    #nav-list {
+        display: none;
+    }
 }
 
 /* hide the hamburger button on wide screen */
-@media screen and (min-width:600px){
+@media screen and (min-width:600px) {
     #hamburger {
         display: none;
     }
