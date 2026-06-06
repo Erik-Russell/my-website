@@ -23,3 +23,9 @@ document.querySelectorAll('a[href^="#"]').forEach(
         anchor.href = window.location.pathname + anchor.getAttribute('href');
     }
 );
+
+// add google fonts connection to all html pages with this js
+document.querySelector('head').innerHTML +=
+    `<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></link>`;
