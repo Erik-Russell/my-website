@@ -34,29 +34,38 @@
         <p>Cryptography</p>
         <img src="images/cryptography.png" alt="Cryptography icon">
         <ul>
-          <li class="center">Encryption Algorithms</li>
-          <li class="center">Hashing Algorithms</li>
-          <li class="center">Cyrptographic Keys</li>
+          <li class="center"><button popovertarget="enc-alg">Encryption Algorithms</button></li>
+          <li class="center"><button popovertarget="has-alg">Hashing Algorithms</button></li>
+          <li class="center"><button popovertarget="cry-key">Cyrptographic Keys</button></li>
         </ul>
       </div>
+      <div id="enc-alg" popover="auto" class="info-popover">make information temporarily secret</div>
+      <div id="has-alg" popover="auto" class="info-popover">uniquely different code</div>
+      <div id="cry-key" popover="auto" class="info-popover">secret key exchange</div>
       <div class="card">
         <p>Machining</p>
         <img src="images/milling-machine.png" alt="milling-machine icon">
         <ul>
-          <li class="center">3-Axis / 5-Axis</li>
-          <li class="center">CNC</li>
-          <li class="center">Monolithic Machines</li>
+          <li class="center"><button popovertarget="3a5a">3-Axis / 5-Axis</button></li>
+          <li class="center"><button popovertarget="cnc">CNC</button></li>
+          <li class="center"><button popovertarget="mon-mac">Monolithic Machines</button></li>
         </ul>
       </div>
+      <div id="3a5a" popover="auto" class="info-popover">how many ways the machine can move</div>
+      <div id="cnc" popover="auto" class="info-popover">Computer Numerically Controlled</div>
+      <div id="mon-mac" popover="auto" class="info-popover">lathes more than 100' long</div>
       <div class="card">
         <p>Steam</p>
         <img src="images/steam.png" alt="steam cooling tower icon">
         <ul>
-          <li class="center">Nuclear</li>
-          <li class="center">Natural Gas</li>
-          <li class="center">Fuel Oil</li>
+          <li class="center"><button popovertarget="nucl">Nuclear</button></li>
+          <li class="center"><button popovertarget="nat-gas">Natural Gas</button></li>
+          <li class="center"><button popovertarget="fuel-oil">Fuel Oil</button></li>
         </ul>
       </div>
+      <div id="nucl" popover="auto" class="info-popover">hot rock make steam</div>
+      <div id="nat-gas" popover="auto" class="info-popover">dinosaur farts</div>
+      <div id="fuel-oil" popover="auto" class="info-popover">burning diesel</div>
     </main>
 
     <footer>

@@ -13,5 +13,8 @@ A simple website designed for presenting concepts in CIS 155 Web Development
 
 ## Suggestions from peer critiques
 - Subjects on some of the pages could be displayed as cards - making them potentially more readable
+    - added some card style to content on interest pages
 - Some more of the interesting and evocative art that is on the Home page could be included on other pages
+    - added banner to top of interest pages
 - The buttons on the Home page look clickable - users might go there instead of the menu because they are so attractive
+    - added popovers

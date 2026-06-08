@@ -194,11 +194,31 @@ body {
 }
 
 .card li {
-    padding: 1rem;
+    padding: 0rem;
     /* 1rem change from 0.5 rem for aesthetics */
     margin: 1rem;
     border-radius: 1rem;
     background-color: var(--dark-neutral);
+    /* hidden to show no scrolling */
+    overflow: hidden;
+}
+
+.card li a {
+    display: block;
+    /* padding makes whole background of li clickable */
+    padding: 1.5rem 1rem;
+    text-decoration: none;
+}
+
+.card li button {
+    display: block;
+    padding: 1rem 1.5rem;
+    border: none;
+    background-color: var(--dark-neutral);
+}
+
+.info-popover {
+    position-area: right;
 }
 
 @media screen and (max-width:1024px) {
