@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/my-website/">
+
+    <meta name="description" content="Landing page for webpages about making steam">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interest-page.css">
+
+    <!--SEO: 65 char max, unique to page, include keywords-->
+    <title>Russell's Webpage | Steam Table</title>
+</head>
+
+<body>
+    <!-- 
+  header + site navigation
+  ** about and contact should be moved to footer **
+  -->
+    <div class="header">
+        <h1>Machining</h1>
+    </div>
+
+    <div class="container">
+        <!-- links for different pages of interest-->
+        <div id="nav-component"></div>
+        <main>
+            <div class="bg-slot" id="steam-bg"></div>
+            <div class="table-container center">
+                <table>
+                    <caption>Saturated Steam Table</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" rowspan="2">Gauge Pressure
+                                <br><i>(psig)</i>
+                            </th>
+                            <th scope="col" rowspan="2">Temperature
+                                <br><i>(&#176F)</i>
+                            </th>
+                            <th scope="col" rowspan="2">Specific Volume
+                                <br><i>(ft<sup>3</sup>/lb)</i>
+                            </th>
+                            <th scope="col" colspan="3">Enthalpy</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Saturated Liquid
+                                <br><i>(Btu/lb)</i>
+                            </th>
+                            <th scope="col">Evaporated
+                                <br><i>(Btu/lb)</i>
+                            </th>
+                            <th scope="col">Saturated Vapor
+                                <br><i>(Btu/lb)</i>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>25<br>(Inches Mercury Vacuum)</td>
+                            <td>134</td>
+                            <td>142</td>
+                            <td>102</td>
+                            <td>1017</td>
+                            <td>1119</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>212</td>
+                            <td>26.8</td>
+                            <td>180</td>
+                            <td>970</td>
+                            <td>1150</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>298</td>
+                            <td>6.68</td>
+                            <td>267</td>
+                            <td>912</td>
+                            <td>1179</td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td>338</td>
+                            <td>3.89</td>
+                            <td>309</td>
+                            <td>880</td>
+                            <td>1189</td>
+                        </tr>
+                        <tr>
+                            <td>150</td>
+                            <td>366</td>
+                            <td>2.74</td>
+                            <td>339</td>
+                            <td>859</td>
+                            <td>1195</td>
+                        </tr>
+                        <tr>
+                            <td>400</td>
+                            <td>448</td>
+                            <td>1.12</td>
+                            <td>428</td>
+                            <td>777</td>
+                            <td>1205</td>
+                        </tr>
+                        <tr>
+                            <td>800</td>
+                            <td>520</td>
+                            <td>0.56</td>
+                            <td>512</td>
+                            <td>686</td>
+                            <td>1198</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Data from:<a
+                                    href="https://www.engineeringtoolbox.com/saturated-steam-properties-d_273.html">Engineering
+                                    Toolbox</a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>&copy; Erik Russell<br> All Rights Reserved</p>
+            </div>
+            <div id="credits">
+                <p>credits:</p>
+                <!--
+        Flaticon License allows for use on personal projects
+        -->
+                <a href="https://www.flaticon.com/free-icons/steam" title="steam icons">Steam icons created by Eucalyp -
+                    Flaticon</a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="scripts/get-components.js"></script>
+
+</html>

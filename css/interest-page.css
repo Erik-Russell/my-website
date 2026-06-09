@@ -63,3 +63,13 @@
 #steam-bg {
     background-image: url(../images/steam.png);
 }
+
+#steam-table-link a {
+    color: var(--dark-green);
+    text-decoration: none;
+}
+
+#steam-table-link a:hover {
+    background-color: var(--dark-neutral);
+    border-radius: 16px;
+}
